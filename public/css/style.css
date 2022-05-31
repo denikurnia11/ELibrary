@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&display=swap");
+
+body {
+    /* max-height: 100vh; */
+    overflow-x: hidden;
+    background-color: #f6f9f9;
+}
+.navbar {
+    background-color: #33b5e5;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.judul {
+    font-family: "Bodoni Moda", serif;
+}
+
+.on {
+    margin-left: 290px;
+    transition: 0.7s ease;
+}
+.dropdownContent {
+    margin-left: -25px;
+    font-size: 15px;
+}
+.side-bar {
+    background: #b5eaea;
+    width: 290px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    overflow-y: auto;
+    transition: 0.6s ease;
+    transition-property: left;
+}
+
+.side-bar.active {
+    left: 0;
+}
+
+.side-bar .menu {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.side-bar .menu .item {
+    position: relative;
+    cursor: pointer;
+}
+
+.side-bar .menu .item a {
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 60px;
+}
+
+.side-bar .menu .item a:hover {
+    background: #8621f8;
+    transition: 0.3s ease;
+}
+
+.side-bar .menu .item i {
+    margin-right: 15px;
+}
+
+.side-bar .menu .item a .dropdown {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    transition: 0.3s ease;
+}
+
+.side-bar .menu .item .sub-menu {
+    background: rgba(255, 255, 255, 0.1);
+    display: none;
+}
+
+.side-bar .menu .item .sub-menu a {
+    padding-left: 90px;
+}
+
+.rotate {
+    transform: rotate(90deg);
+}
+
+.close-btn {
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    right: 0;
+    margin: 25px;
+    cursor: pointer;
+}
+
+.menu-btn {
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.main {
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px 50px 50px;
+}
+.content {
+    height: 35rem;
+}
+.footer {
+    margin-left: -50px;
+    margin-right: -50px;
+    margin-top: 8%;
+}
+.btnX {
+    cursor: pointer;
+}
+
+.keterangan {
+    font-size: 12px;
+}
+
+.foto {
+    width: 50px;
+}
+.circular--portrait {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 70px 0 10px 97px;
+    border: 3px solid white;
+}
+
+.circular--portrait img {
+    width: 100%;
+    height: auto;
+}
+.fotoProfileSidebar {
+    width: 100%;
+}
+.warpContentProfile {
+    height: 30rem;
+    padding-top: 30px;
+    background-color: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.img-thumbnail {
+    width: 100px;
+}
+.myProfile {
+    height: 50px;
+    padding: 10px 50px 0 50px;
+}
+.myProfileText {
+    font-weight: bold;
+    color: #716f81;
+}
+.biodata {
+    font-weight: bold;
+    padding-left: 14rem;
+}
